@@ -19,7 +19,7 @@ interface Particle {
   y: number;
   vx: number;
   vy: number;
-  life: number;2474
+  life: number;
   color: string;
 }
 
