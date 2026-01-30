@@ -114,7 +114,7 @@ export default function Nav() {
 
           {/* Desktop resume button */}
           <div className="hidden md:block pl-2 pr-1 relative z-10">
-            <a href="#resume" className="btn btn-primary" style={{ boxShadow: '0 0 0 2px #e34b4b' }} onClick={(e)=>onClick(e,'contact')}>
+            <a href="/CRAIG TOGAREPI.pdf" target="_blank" className="btn btn-primary" style={{ boxShadow: '0 0 0 2px #e34b4b' }}>
               Resume
             </a>
           </div>
@@ -137,7 +137,7 @@ export default function Nav() {
                   )}
                 </a>
               ))}
-              <a href="#resume" className="btn btn-primary mt-2 w-full text-center" style={{ boxShadow: '0 0 0 2px #e34b4b' }} onClick={(e)=>onClick(e,'contact')}>
+              <a href="/CRAIG TOGAREPI.pdf" target="_blank" className="btn btn-primary mt-2 w-full text-center" style={{ boxShadow: '0 0 0 2px #e34b4b' }}>
                 Resume
               </a>
             </nav>

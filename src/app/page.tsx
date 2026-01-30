@@ -15,13 +15,13 @@ type Project = {
 };
 
 const ALL_PROJECTS: Project[] = [
-  { id: "p1", title: "Mental Health Platform", category: "dash", img: "https://picsum.photos/seed/mentalhealth/900/600", href: "https://mentalmatezw.lovable.app", withPrimaryCta: true, desc: "A comprehensive mental health support platform with real-time chat, mood tracking, and AI-powered recommendations. Built with React and Node.js for scalability.", stack: ["React", "TypeScript", "Next.js"] },
-  { id: "p2", title: "Landific", category: "dash", img: "https://picsum.photos/seed/propertymanagement/900/600", href: "https://landific.vercel.app/", desc: "Streamlined land management system with property tracking, document management, and real-time reporting. Features a modern, intuitive interface for real estate teams.", stack: ["React", "CSS3", "Node.js"] },
-  { id: "p3", title: "Uncommon.org", category: "web", img: "https://picsum.photos/seed/nonprofit/900/600", href: "https://uncommon.org", desc: "Uncommon.org is a 501(c)(3) nonprofit organization headquartered in New York with program operations in Zimbabwe through the Uncommon.org Trust. Focused on creating positive social impact through innovative programs.", stack: ["React", "TypeScript", "Firebase"] },
-  { id: "p4", title: "Talent Platform", category: "web", img: "https://picsum.photos/seed/talentmarketplace/900/600", href: "https://talent.uncommon.org/", desc: "Advanced talent management platform for tracking skills, opportunities, and career development. Features interactive profiles and job matching.", stack: ["React", "TypeScript", "Chart.js"] },
-  { id: "p7", title: "Playground", category: "web", img: "https://picsum.photos/seed/playground/900/600", href: "https://playground.uncommon.org", desc: "Interactive learning platform for developers and designers. Features coding challenges, design templates, and collaborative tools for skill development.", stack: ["React", "TypeScript", "Node.js"] },
-  { id: "p5", title: "Mobile Banking App", category: "mobile", img: "https://picsum.photos/seed/mobilebanking/900/600", href: "#", desc: "Mobile banking application with secure transactions, balance tracking, and budget management. Features biometric authentication and offline support.", stack: ["React Native", "TypeScript", "Firebase"] },
-  { id: "p6", title: "Fitness Tracker", category: "mobile", img: "https://picsum.photos/seed/fitness/900/600", href: "#", desc: "Health and fitness tracking application with workout plans, nutrition tracking, and goal setting. Features gamification elements to encourage healthy habits.", stack: ["Flutter", "Dart", "Firebase"] },
+  { id: "p1", title: "Mental Health Platform", category: "dash", img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&h=600&fit=crop", href: "https://mentalmatezw.lovable.app", withPrimaryCta: true, desc: "A comprehensive mental health support platform with real-time chat, mood tracking, and AI-powered recommendations. Built with React and Node.js for scalability.", stack: ["React", "TypeScript", "Next.js"] },
+  { id: "p2", title: "Landific", category: "dash", img: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=900&h=600&fit=crop", href: "https://landific.vercel.app/", desc: "Streamlined land management system with property tracking, document management, and real-time reporting. Features a modern, intuitive interface for real estate teams.", stack: ["React", "CSS3", "Node.js"] },
+  { id: "p3", title: "Uncommon.org", category: "web", img: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&h=600&fit=crop", href: "https://uncommon.org", desc: "Uncommon.org is a 501(c)(3) nonprofit organization headquartered in New York with program operations in Zimbabwe through the Uncommon.org Trust. Focused on creating positive social impact through innovative programs.", stack: ["React", "TypeScript", "Firebase"] },
+  { id: "p4", title: "Talent Platform", category: "web", img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=600&fit=crop", href: "https://talent.uncommon.org/", desc: "Advanced talent management platform for tracking skills, opportunities, and career development. Features interactive profiles and job matching.", stack: ["React", "TypeScript", "Chart.js"] },
+  { id: "p7", title: "Playground", category: "web", img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&h=600&fit=crop", href: "https://playground.uncommon.org", desc: "Interactive learning platform for developers and designers. Features coding challenges, design templates, and collaborative tools for skill development.", stack: ["React", "TypeScript", "Node.js"] },
+  { id: "p5", title: "Uber Cargo", category: "mobile", img: "https://images.unsplash.com/photo-1529168407385-c8a4d5477397?w=900&h=600&fit=crop", href: "#", desc: "Uber-style cargo transportation app connecting shippers with available drivers. Features real-time tracking, secure payments, and route optimization for efficient delivery services.", stack: ["React Native", "TypeScript", "Firebase"] },
+  { id: "p6", title: "Mirae Cultural Community", category: "mobile", img: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=900&h=600&fit=crop", href: "#", desc: "Community-based mobile app for people to connect with others of the same cultural background. Features cultural events, language exchange, and community forums for cultural preservation.", stack: ["Flutter", "Dart", "Firebase"] },
 ];
 
 const TABS = [
@@ -67,10 +67,10 @@ export default function Home() {
               }}>DEVELOPER</span>
             </h1>
             <p className="hero-sub text-lg mb-6 text-white/70 mx-auto max-w-3xl">
-              We conducted in-depth interviews to fully map Uncommon.org’s end-to-end Monitoring & Evaluation (M&E) workflows—covering planning, data collection, validation, analysis, and reporting—with insights from key stakeholders including M&E specialists, program managers, and frontline staff; these findings will directly inform the design of a centralized, intelligent M&E system that streamlines processes, improves data accuracy, and enables real-time performance tracking to enhance decision-making.
+              Passionate full-stack developer skilled in building modern, high-performing web and mobile applications. I specialize in React, Next.js, Nest.js, and React Native — delivering scalable, SEO-optimized solutions with seamless user experiences. Focused on clean architecture, performance, and innovation, I turn ideas into reliable digital products that help businesses grow.
             </p>
             <div className="flex items-center justify-center gap-4 pt-2">
-              <a className="btn btn-primary" href="#resume" style={{ boxShadow: '0 0 0 2px #e34b4b' }}>Resume</a>
+              <a className="btn btn-primary" href="/CRAIG TOGAREPI.pdf" target="_blank" style={{ boxShadow: '0 0 0 2px #e34b4b' }}>Resume</a>
               <button className="btn-circle" aria-label="Call" style={{ borderColor: '#3aa6b9', boxShadow: '0 0 0 2px #e34b4b' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.81.3 1.6.57 2.34a2 2 0 0 1-.45 2.11L8.1 9.91a16 16 0 0 0 6 6l1.74-1.11a2 2 0 0 1 2.11-.45c.74.27 1.53.45 2.34.57A2 2 0 0 1 22 16.92z" stroke="#cbd5e1" strokeWidth="1.5"/>
@@ -160,7 +160,7 @@ export default function Home() {
               <h3 className="section-title mb-4">Technologies</h3>
               <p className="section-sub mb-6">These are my main technologies for building robust, scalable applications with modern development practices</p>
               <div className="grid grid-cols-2 gap-3">
-                {["React","TypeScript","CSS3","Next.js","Node","C#"].map((t,i)=> (
+                {["React/reactNative","TypeScript/Js","HTML,CSS3","Next.js/NestJs","Node/ExpressJs","Golang"].map((t,i)=> (
                   <div key={i} className="flex items-center gap-2 badge group-hover:scale-105 transition-transform duration-200">
                     <span className="w-2 h-2 rounded-full" style={{background:i%2? '#3aa6b9':'#4cc9f0'}}></span>
                     <span>{t}</span>
@@ -174,7 +174,7 @@ export default function Home() {
               <h3 className="section-title mb-4">What I do</h3>
               <p className="section-sub mb-6">Focused on building scalable web applications and APIs using modern technologies and best practices</p>
               <div className="grid grid-cols-2 gap-3">
-                {["Frontend Dev","Backend API","UI/UX Design","Testing","Deployment","Maintenance"].map((t,i)=> (
+                {["Frontend Dev","Backend API","UI/UX Design","Testing","Deployment","Maintenance/S.E.O"].map((t,i)=> (
                   <div key={i} className="flex items-center gap-2 badge group-hover:scale-105 transition-transform duration-200">
                     <span className="w-2 h-2 rounded-full" style={{background:i%2? '#3aa6b9':'#4cc9f0'}}></span>
                     <span>{t}</span>
@@ -191,7 +191,7 @@ export default function Home() {
       <section className="section-tight py-6" style={{ background: 'rgba(0,0,0,0.3)' }}>
         <div className="container">
           <h3 className="text-center text-white font-semibold mb-6" style={{ fontFamily: 'var(--font-dyna-puff)' }}>Recent Projects</h3>
-          <div className="mx-auto w-max glass p-2 rounded-full flex items-center gap-2 relative">
+          <div className="mx-auto w-auto lg:w-max glass p-2 rounded-full flex items-center gap-2 relative">
             {/* Glow effect behind active tab */}
             {TABS.map((t, index) => active === t.key && (
               <div
@@ -318,7 +318,7 @@ export default function Home() {
 
 
       {/* Get In Touch */}
-      <section className="section py-16" style={{ background: 'rgba(0,0,0,0.3)' }}>
+      <section id="contact" className="section py-16" style={{ background: 'rgba(0,0,0,0.3)' }}>
         <div className="container max-w-4xl mx-auto text-center">
           <h3 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: 'var(--font-dyna-puff)' }}>
             Have a Project in Mind?
