@@ -263,11 +263,18 @@ section {
   padding: 0;
 }
 
+.container {
+  padding-inline: 1rem;
+}
+
 /* Tablet - 768px and up */
 @media (min-width: 768px) {
   .section { min-height: calc(100vh - 80px); }
   /* .section-tight { min-height: calc(100vh - 80px); } */
   section { scroll-margin-top: 80px; }
+  .container {
+    padding-inline: 0;
+  }
 }
 
 /* Mobile - max 767px */
@@ -281,18 +288,19 @@ section {
   
   /* Hero section mobile adjustments */
   #home .hero-kicker {
-    letter-spacing: 0.3em;
-    font-size: 0.875rem;
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
   }
   
   #home h1 {
-    font-size: 2.5rem;
-    letter-spacing: 0.08em;
+    font-size: 2rem;
+    letter-spacing: 0.06em;
   }
   
   #home .hero-sub {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.6;
+    padding: 0 1rem;
   }
   
   /* Navigation mobile adjustments */
@@ -349,6 +357,18 @@ section {
     gap: 1.5rem;
     text-align: center;
   }
+  
+  /* Projects grid mobile adjustments */
+  #projects .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  /* About section mobile adjustments */
+  #about .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 /* Game canvas responsive sizing */
@@ -384,8 +404,9 @@ section {
 
 /* Small screens - max 480px */
 @media (max-width: 480px) {
-  .container {
-    padding-inline: 1rem;
+
+  .navbar .container  {
+    width: 50%;
   }
   
   /* Hero section small screen adjustments */

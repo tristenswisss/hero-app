@@ -55,7 +55,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40" />
         {/* Futuristic grid overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(58,166,185,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(58,166,185,0.03)_1px,transparent_1px)] bg-size-[80px_80px] animate-pulse" />
-        <div className="container relative z-10 max-w-4xl mx-auto px-0 text-center">
+        <div className="container relative z-10 max-w-4xl mx-auto text-center">
           {/* Welcome text - center aligned */}
           <div className="mx-auto">
             <div className="hero-kicker text-sm tracking-[0.4em] mb-3 text-white/80">I AM A</div>
@@ -130,7 +130,7 @@ export default function Home() {
         <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-cyan-500/10 blur-xl animate-pulse" />
         <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-purple-500/10 blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
         <div className="absolute top-1/2 left-1/2 w-64 h-64 rounded-full bg-red-500/5 blur-xl animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="container max-w-6xl mx-auto px-0">
+        <div className="container max-w-6xl mx-auto">
           <div className="card p-6 relative overflow-hidden">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
@@ -240,8 +240,8 @@ export default function Home() {
             );
           })}
         </div>
-        <div className="container max-w-6xl mx-auto px-0">
-          <div className="grid md:grid-cols-2 gap-8">
+        <div className="container max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
             {visibleProjects.map((p) => (
               <article key={p.id} className="card overflow-hidden group relative">
                 {p.category === 'mobile' ? (
