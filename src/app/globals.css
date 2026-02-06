@@ -404,9 +404,8 @@ section {
 
 /* Small screens - max 480px */
 @media (max-width: 480px) {
-
-  .navbar .container  {
-    width: 50%;
+  .container {
+    padding-inline: 1rem;
   }
   
   /* Hero section small screen adjustments */
