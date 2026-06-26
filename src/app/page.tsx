@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type Project = {
   id: string;
@@ -11,6 +12,7 @@ type Project = {
   desc: string;
   stack: string[];
   metric: string;
+  mockup?: string;
 };
 
 const ALL_PROJECTS: Project[] = [
@@ -22,6 +24,7 @@ const ALL_PROJECTS: Project[] = [
     desc: "AI-supported mental-health dashboard with chat, mood tracking, and guided care flows.",
     stack: ["React", "TypeScript", "Next.js"],
     metric: "Care platform",
+    mockup: "/mockup-mentalmate.png",
   },
   {
     id: "p2",
@@ -31,6 +34,7 @@ const ALL_PROJECTS: Project[] = [
     desc: "Land-management workspace for property insights, reporting, and document workflows.",
     stack: ["React", "CSS3", "Node.js"],
     metric: "Ops dashboard",
+    mockup: "/mockup-landific.png",
   },
   {
     id: "p3",
@@ -40,6 +44,7 @@ const ALL_PROJECTS: Project[] = [
     desc: "Accessible nonprofit web experience built for storytelling, recruitment, and giving.",
     stack: ["React", "TypeScript", "Firebase"],
     metric: "Mission site",
+    mockup: "/mockup-uncommon.png",
   },
   {
     id: "p4",
@@ -106,6 +111,18 @@ const SERVICES = [
   },
 ];
 
+const FadeIn = ({ children, delay = 0, className = "" }: { children: React.ReactNode, delay?: number, className?: string }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-100px" }}
+    transition={{ duration: 0.6, delay, ease: "easeOut" }}
+    className={className}
+  >
+    {children}
+  </motion.div>
+);
+
 export default function Home() {
   const [active, setActive] = useState<(typeof TABS)[number]["key"]>("web");
   const list = useMemo(() => ALL_PROJECTS.filter((project) => project.category === active), [active]);
@@ -118,7 +135,7 @@ export default function Home() {
         <div className="hero-orbit hero-orbit-two" />
 
         <div className="content hero-content">
-          <div className="hero-copy-block">
+          <FadeIn className="hero-copy-block">
             <p className="eyebrow">Craig Togarepi / Full-stack engineer</p>
             <h1>Future-ready products with clean code and cinematic polish.</h1>
             <p className="lead">
@@ -133,9 +150,9 @@ export default function Home() {
                 Download resume
               </a>
             </div>
-          </div>
+          </FadeIn>
 
-          <div className="command-panel" aria-label="Portfolio highlights">
+          <FadeIn delay={0.2} className="command-panel" aria-label="Portfolio highlights">
             <div className="panel-toolbar">
               <span />
               <span />
@@ -160,12 +177,12 @@ export default function Home() {
               <span>deploy</span>
               <b>portfolio: futuristic build online</b>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </section>
 
       <section id="about" className="section-shell">
-        <div className="content split-section">
+        <FadeIn className="content split-section">
           <div>
             <p className="eyebrow">About</p>
             <h2>Engineering that feels sharp before the first click.</h2>
@@ -177,9 +194,9 @@ export default function Home() {
           <div className="profile-panel">
             <Image src="/hero-feature-3.svg" alt="Product systems illustration" width={640} height={460} priority />
           </div>
-        </div>
+        </FadeIn>
 
-        <div className="content service-grid">
+        <FadeIn delay={0.2} className="content service-grid">
           {SERVICES.map((service, index) => (
             <article className="service-card" key={service.title}>
               <span>{String(index + 1).padStart(2, "0")}</span>
@@ -187,7 +204,25 @@ export default function Home() {
               <p>{service.body}</p>
             </article>
           ))}
+        </FadeIn>
+      </section>
+
+      <section id="skills" className="section-shell">
+        <div className="content section-header">
+          <div>
+            <p className="eyebrow">Tech Stack</p>
+            <h2>The tools I use to build scalable products.</h2>
+          </div>
         </div>
+        <FadeIn delay={0.2} className="content">
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '32px' }}>
+            {['ReactJS', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'Django', 'Tailwind CSS', 'Firebase', 'PostgreSQL', 'SEO', 'Framer Motion'].map(skill => (
+              <span key={skill} style={{ display: 'inline-flex', padding: '0.6rem 1rem', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '8px', color: 'var(--text)', background: 'rgba(255, 255, 255, 0.04)', fontSize: '0.9rem', fontWeight: 700 }}>
+                {skill}
+              </span>
+            ))}
+          </div>
+        </FadeIn>
       </section>
 
       <section id="projects" className="section-shell projects-section">
@@ -211,7 +246,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="content project-grid">
+        <FadeIn delay={0.2} className="content project-grid">
           {list.map((project) => {
             const activeLink = project.href && project.href !== "#";
             return (
@@ -240,7 +275,7 @@ export default function Home() {
               </article>
             );
           })}
-        </div>
+        </FadeIn>
       </section>
 
       <section id="contact" className="section-shell contact-section">
