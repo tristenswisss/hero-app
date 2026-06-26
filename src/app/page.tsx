@@ -129,7 +129,7 @@ export default function Home() {
               <a href="#projects" className="btn btn-primary">
                 View work
               </a>
-              <a href="/CRAIG TOGAREPI.pdf" target="_blank" className="btn btn-ghost">
+              <a href="/Craig Togarepi- Software Developer.pdf" target="_blank" className="btn btn-ghost">
                 Download resume
               </a>
             </div>

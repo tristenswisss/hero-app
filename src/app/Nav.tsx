@@ -79,7 +79,7 @@ export default function Nav() {
               </a>
             ))}
           </div>
-          <a href="/CRAIG TOGAREPI.pdf" target="_blank" className="nav-cta-btn">
+          <a href="/Craig Togarepi- Software Developer.pdf" target="_blank" className="nav-cta-btn">
             Resume
           </a>
           <button
