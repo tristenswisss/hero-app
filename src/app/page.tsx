@@ -149,6 +149,14 @@ export default function Home() {
               <a href="/Craig Togarepi- Software Developer.pdf" target="_blank" className="btn btn-ghost">
                 Download resume
               </a>
+              <a
+                href="/Craig_Togarepi_Content_Writer_Portfolio.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-ghost"
+              >
+                View writing portfolio
+              </a>
             </div>
           </FadeIn>
 
